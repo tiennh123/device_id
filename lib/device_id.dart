@@ -31,4 +31,9 @@ class DeviceId {
     final String meid = await _channel.invokeMethod('getMEID');
     return meid;
   }
+
+  static Future<String> get getGsf async {
+    final String meid = await _channel.invokeMethod('getGsf');
+    return meid;
+  }
 }
